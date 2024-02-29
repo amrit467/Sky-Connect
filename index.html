@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Airlines Booking</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <div id="upper-header">
+            <div id="left-header">
+                <!-- <a href="index.html">Delta Airways</a> -->
+                <a href="mailto:info@deltaairways.com" id="header-email-anchor"><span>Email : </span>info@deltaairways.com</a>
+            </div>
+            <div id="right-header">
+                <a href="tel:+18887115595"><span>Toll Free :</span> +1(888)7115595</a>
+            </div>
+        </div>
+        <nav id="lower-header">
+            <div id="left-side">
+                <a href="index.html"><img src="" alt="img"></a>
+            </div>
+            <div id="right-side">
+                <a href="index.html" class="current-page">Home</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+            
+        </nav>
+        
+    </header>
+
+    <main>
+        <div id="img-container">
+            <h2 class="centered-text font-Arial">Book your flight to avail last minute and discounted deals
+                Call Now</h2>
+            <h2 class="centered-text font-Arial"><a href="tel:+18887115595">+1(888)7115595</a></h2>
+
+            <div class="button-grp justified-text">
+                <button class="active tactive" onclick="selectButton(1)" id="active-btn">Round-Trip</button>
+                <button class="tactive" onclick="selectButton(2)">One-way</button>
+                <button class="tactive" onclick="selectButton(3)">Multi-city</button>
+            </div>
+            <div class="justified-text outer-container background-black">
+                <div class="inner-container">
+                    <div id="logo-and-heading">
+                        <div id="only-heading">
+                            <h3 class="font-Arial">Cheap flights with cashback</h3>
+                            <h4 class="font-Arial">WayAway – the app that gives you cashback on all travel deals</h4>
+                        </div>
+                        <div id="only-logo">
+                            <a href="index.html"><img src="imgs/walk.svg" alt="N/A"></a>
+                        </div>
+                    </div>
+
+                    <form action="#">
+                        <div id="first-two">
+                            <div class="label-input">
+                                <label class="font-Arial" for="origin">Origin</label>
+                                <input class="font-Arial" type="text" id="origin" name="origin" placeholder="Enter origin">
+                            </div>
+                            <div class="label-input">
+                                <label class="font-Arial" for="dest">Destination</label>
+                                <input class="font-Arial" type="text" id="dest" name="destination" placeholder="Enter Destination">
+                            </div>
+                        </div>
+
+                        <div id="middle-last-container" class="font-Arial">
+                            <div id="middle-two">
+                                <div class="label-input">
+                                    <label for="depart">Depart</label>
+                                    <input type="date" id="depart" name="depart" placeholder="Select Date">
+                                </div>
+        
+                                <div class="label-input">
+                                    <label for="return">Return</label>
+                                    <input type="date" id="return" name="return" placeholder="Select Date">
+                                </div>
+                            </div>
+    
+                            <div id="last-input">
+                                <div class="label-input">
+                                    <label for="return">Return</label>
+                                    <input type="date" id="return" name="return" placeholder="Select Date">
+                                </div>
+                                <div id="invis-check-container" class="font-Arial">
+                                    <input type="checkbox" name="check" id="invis-check-save" class="checkbtn">
+                                    <label for="invis-check-save">Business Class</label>
+                                </div>
+                                <div class="label-input font-Arial">
+                                    <label for="r" id="R-id">R</label>
+                                    <Button id="search-flight-btn">Search Flights</Button>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div id="check-container" class="font-Arial">
+                            <input type="checkbox" name="check" id="check-save" class="checkbtn">
+                            <label for="check-save">Business Class</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <h3 id="last-txt" class="background-black centered-text white-clr" >Book your best flight with us & get amazing deals</h3>
+        
+        </div>
+
+        <div id="white-container">
+            <h2 class="centered-text font-Arial">Select Your Best Destination all Over the World</h2>
+            <h5 class="centered-text font-Arial">Book your best flight with us & get amazing deals</h5>
+            <h5 class="centered-text font-Arial">Do Your Flight Reservations with Fly With Deltaairways.online</h5>
+
+        </div>
+
+        <div id="card-container" class="justified-text">
+            <div class="card">
+                <img src="imgs/icons/w1.svg" alt="notfound">
+                <div class="in-card">
+                    <h3>Best Price Guarantee</h3>
+                    <h5>Book Your Flight With Us at best Price</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/icons/w2.svg" alt="notfound">
+                <div class="in-card">
+                    <h3>Easy Booking</h3>
+                    <h5>Simple & Easy Flight Ticket Booking Service</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/icons/w3.svg" alt="notfound">
+                <div class="in-card">
+                    <h3>Last Minute Deal</h3>
+                    <h5>Last minute deals are available at lowest fare</h5>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="blue-container">
+            <div class="justified-text">
+                <h2>Why Us ?</h2>
+                <div id="in-blue-container">
+                    <div id="left-side">
+                        <ul>
+                            <li>Our International exclusive deals are not available online<br>
+                                ( so please email or call for a quote )</li>
+                            <li>Affordable bulk airline tickets on discount</li>
+                            <li>Flights in emergencies and during busy seasons</li>
+                            <li>Travel services for all types of group and religious travelers</li>
+                            <li>Flights to all types of destinations</li>
+                            <li>Tour travel planning and custom itineraries</li>
+                            <li>Time-saving airline ticket purchases</li>
+                            <li>Time-saving airline ticket purchases</li>
+                            <li>We have net fares originating in europe in either business/coach class</li>
+                            <li>We can do one way fares to/from the us and europe in business/coach class</li>
+                            <li>Most of the time we can help you if you don't have minimum stay required <br>( or advance purchase by the airline )</li>
+                            <li>Cancellation with in 7 days at free of cost</li>
+                            <li>We have a price meet or beat policy <br>
+                                ( so please let us know if you find any better deal )</li>
+                            <li>Industry experience on group travel</li>
+                        </ul>
+    
+                        <Button>Learn More</Button>
+                    </div>
+                    <img src="imgs/planes2.png" alt="not found">
+                </div>
+            </div>
+        </section>
+
+        <section id="red-container">
+            <div class="justified-text">
+                <div id="red-left">
+                    <h3>Hot deals newsletter</h3>
+                    <h4>Sign up for email deals, special offers and promotions.</h4>
+                </div>
+                <div id="red-right">
+                    <input type="email" name="sign-up" id="sign-up" placeholder="your email address">
+                    <button id="sign-up-btn">SIGN UP</button>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="centered-text separate">Don't just take our word for it.</h3>
+        <h4 class="centered-text separate">For credibility and transparency we use Yelp and Google to collect reviews.</h4>
+        
+        <section id="bottom-container">
+            <h2 class="centered-text">Explore More ! <br>
+                Business Class for All Airline</h2>
+            <h3 class="centered-text" id="btm-h3">TRENDING COUNTRIES</h3>
+            <div class="justified-text" id="trending-container">
+                <div class="trending"><a href="">PARIS (FRANCE) : <span>$1100</span></a></div>
+                <div class="trending"><a href="">BRUSSELS (BELGIUM) : <span>$1250</span></a></div>
+                <div class="trending"><a href="">VENICE (ITALY) : <span>$1755</span></a></div>
+                <div class="trending"><a href="">TEL AVIV (ISRAEL) : <span>$1967</span></a></div>
+                <div class="trending"><a href="">PRAGUE (CZECH REPUBLIC) : <span>$1250</span></a></div>
+                <div class="trending"><a href="">SCOTLAND (ENGLAND) : <span>$1369</span></a></div>
+                <div class="trending"><a href="">NEW DELHI (INDIA) : <span>$1921</span></a></div>
+                <div class="trending"><a href="">LAGOS (NIGERIA) : <span>$1580</span></a></div>
+                <div class="trending"><a href="">LONDON (UK) : <span>$1119</span></a></div>
+                <div class="trending"><a href="">AMSTERDAM : <span>$1500</span></a></div>
+                <div class="trending"><a href="">FRANKFURT : <span>$2550</span></a></div>
+                <div class="trending"><a href="">MILAN : <span>$3140</span></a></div>
+                <div class="trending"><a href="">ATHENS : <span>$2450</span></a></div>
+                <div class="trending"><a href="">MADRID : <span>$1950</span></a></div>
+                <div class="trending"><a href="">MUNICH : <span>$2850</span></a></div>
+                <div class="trending"><a href="">ZURICH : <span>$1568</span></a></div>
+                <div class="trending"><a href="">LISBON : <span>$2435</span></a></div>
+                <div class="trending"><a href="">VIENNA : <span>$2397</span></a></div>
+                <div class="trending"><a href="">PRAGUE : <span>$2497</span></a></div>
+            </div>
+
+            <h3 class="centered-text" id="btm-h3-2">POPULAR CITIES</h3>
+            <div class="justified-text" id="popular-container">
+                <div class="trending"><a href="">AMSTERDAM</a></div>
+                <div class="trending"><a href="">BANGKOK</a></div>
+                <div class="trending"><a href="">LONDON</a></div>
+                <div class="trending"><a href="">MADRID</a></div>
+                <div class="trending"><a href="">NICE</a></div>
+                <div class="trending"><a href="">PARIS</a></div>
+                <div class="trending"><a href="">ROME</a></div>
+                <div class="trending"><a href="">SHANGHAI</a></div>
+                <div class="trending"><a href="">TOKYO</a></div>
+                <div class="trending"><a href="">VIENNA</a></div>
+                <div class="trending"><a href="">CANADA</a></div>
+                <div class="trending"><a href="">CHICAGO</a></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer-header" class="justified-text">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="t&c.html">Terms & Conditions</a></li>            
+                <li><a href="refund.html">Refund Policy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div id="footer-img" class="justified-text">
+            <img src="imgs/f-l-1.png" alt="n/a">
+            <img src="imgs/f-l-2.png" alt="n/a">
+            <img src="imgs/f-l-3.png" alt="n/a">
+            <img src="imgs/f-l-4.png" alt="n/a">
+            <img src="imgs/f-l-5.png" alt="n/a">
+            <img src="imgs/f-l-6.png" alt="n/a">
+            <img src="imgs/f-l-7.png" alt="n/a">
+            <img src="imgs/f-l-8.png" alt="n/a">
+            <img src="imgs/f-l-9.png" alt="n/a">
+        </div>
+
+        <article id="footer-article" class="justified-text">
+            Disclaimer : By submitting your flights information, name, phone number, and email on this website, you authorize us to collect and use this information to assist you in booking flights and providing related services. We take the privacy and security of your personal data seriously and will handle it in accordance with our privacy policy. Please note that while we strive to protect your information, the transmission of data over the internet is not entirely secure, and we cannot guarantee the absolute security of your data during transmission. By submitting your information, you acknowledge and accept these potential risks. We may contact you via phone or email to discuss your flight options and provide updates on your booking. You have the right to request access, correction, or deletion of your personal data in accordance with applicable data protection laws. For more information about our data handling practices, please refer to our privacy policy.
+        </article>
+
+        <h6 class="justified-text">Business Address: 640 113th St ETacoma, WA 98445, USA</h6>
+        <h6 id="last-h6"><span class="justified-text">© 2023 deltaairways.online. All rights reserved.</span></h6>
+
+    </footer>
+
+    <script src="scripting.js"></script>
+</body>
+</html>

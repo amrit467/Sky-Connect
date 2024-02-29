@@ -1,0 +1,15 @@
+/* #cu-form
+{
+    display: flex;
+    height: 1000px;
+}
+#cu-form-left
+{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+#cu-form-left input
+{
+    width:100%;
+} */
